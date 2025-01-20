@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+
+  "name": "Basic Chrome Extension",
+  "description": "This extension is for education purpose",
+  "version": "1.0",
+
+    "content_scripts": [
+      {
+        "js": ["script.js"],
+        "matches": [
+          "https://fr.wikipedia.org/wiki/Culture"
+        ]
+      }
+    ],
+    "permissions": ["tabs"]
+  }
+
